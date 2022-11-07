@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Safe Paraglide</title>
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<style>
+		body{   
+			background-color: #c8b7a6;                                              
+			background-image: url("https://i0.wp.com/globalparagliding.com/wp-content/uploads/2020/01/how-safe-is-paragliding-banner.jpg?fit=1280%2C800&ssl=1");
+			background-position: center;
+			font-family: sans-serif;
+			color:#703f37;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		ul {
+			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+  			overflow: hidden;
+  			background-color: #703f37;
+  			position: fixed;
+  			top: 0;
+  			width: 100%;
+		}
+		li {
+  			float: left;
+		}
+		li a {
+  			display: block;
+ 			  color: #c8b7a6;
+  			text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
+		}
+		li a:hover:not(.active) {
+  			background-color: #c8b7a6;
+			  color: #703f37;
+		}
+		h1{
+			font-size: 100px;
+			color:black;
+		}
+		input[type=text] {
+      		padding:10px;
+  			margin:10px 0;
+			border-radius: 35px;
+			background-color:whitesmoke;
+			color: black;
+		}
+		button{
+			padding: 10px;
+			margin: 10px 0;
+			border-radius: 35px;
+			background-color: white;
+			color: black;
+		}
+		button:hover{
+			background-color: green;
+			color: white;
+		}
+		h2{
+			font-size: 40px;
+			color: black;
+		}
+		.box{
+			width: 30%;
+			height: 300px;
+			margin: auto;
+			border-radius: 15px;
+			padding-left: 15px;
+			padding-right: 0px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: black;
+			color: #c8b7a6;
+			text-align: center;
+			opacity: 0.75;
+		}
+		#result{
+			color: #c8b7a6;
+			font-weight: bold;
+		}
+		.suggest{
+			width: 50%;
+			height: 500px;
+			margin: auto;
+			border-radius: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: #703f37;
+			color: #c8b7a6;
+			text-align: center;
+			float: left;
+			opacity: 0.75;
+		}
+		#queenstown{
+			display: flex;
+			float: left;
+		}
+		.box2{
+			display: flex;
+			float: left;
+		}
+		.safety{
+			width: 50%;
+			height: 500px;
+			margin: auto;
+			border-radius: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: darkred;
+			color: #c8b7a6;
+			text-align: center;
+			float: left;
+			opacity: 0.8;
+		}
+		h5{
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!---------------------------------------------------------------------NAVBAR------------------------------------------------------------->
+	<ul>
+		<li><a href="main.html">Home</a></li>
+		<li><a href="index.html">Paraglider Info</a></li>
+	</ul>
+	<!---------------------------------------------------------------------HOME------------------------------------------------------------->
+	<div id="title" style="padding:20px;margin-top:20px;height:100px;text-align: center;"><h1>SAFE PARAGLIDE APP</h1></div>
+	<div id="desc" style="text-align: center;padding-top:10px;"><h2>Enter the place you want to paraglide!</h2></div>
+	<div class="box">
+		<input type="text" id="city" placeholder="Enter place...">
+		<button onclick="buttonClicked()">submit</button>
+		<div id="result">
+			<div id="display" style="font:bold;"></div>
+			<br>
+			<div id="display5" style="font:bold"></div>
+			<br>
+			<div id="display6" style="font:bold"></div>
+			<br>
+			<div id="display1" style="font:bold;"></div>
+			<br>
+			<div id="display4" style="font:bold;"></div>
+			<br>
+			<div id="display2" style="font:bold;"></div>
+			<br>
+			<div id="display3" style="font:bold;"></div>
+		</div>
+	</div>
+	<!----------------------------------------------------------------SUGGESTION------------------------------------------------------------------>
+	<div class="box2">
+		<div class="suggest">
+			<h3>Best paragliding spots</h3>
+			<div class="queenstown">
+				<h5>1. Queenstown, New Zealand</h5>
+			</div>
+			<br>
+			<div class="pokhara">
+				<h5>2. Pokhara, Nepal</h5>
+			</div>
+			<br>
+			<div class="gudari">
+				<h5>3. Gudari, Georgia</h5>
+			</div>
+			<br>
+			<div class="oludeniz">
+				<h5>4. Ölüdeniz, Turkey</h5>
+			</div>
+		</div>
+	<!---------------------------------------------------------------SAFETY---------------------------------------------------------------------->
+		<div class="safety">
+			<h3>Safety Tips!</h3>
+			<div class="safe1">
+				<h5>1. The weather to be dry and wind speed must lower than 18mph and higher than 12mph.</h5>
+			</div>
+			<div class="safe2">
+				<h5>2. The equipment now used for paragliding is much safer compared to the previous period. It is designed to allow easy adjustments on the fly in case of any discomfort.</h5>
+			</div>
+			<div class="safe3">
+				<h5>3. Check Paragliding Equipment Before Every Flight</h5>
+			</div>
+			<div class="safe3">
+				<h5>4. Maintain Safe Distances</h5>
+			</div>
+		</div>
+	</div>
+<script src="api.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="photon.min.css" />
+    <style>
+      body{   
+			background-color: #c8b7a6;                                              
+			background-image: url("https://i0.wp.com/globalparagliding.com/wp-content/uploads/2020/01/how-safe-is-paragliding-banner.jpg?fit=1280%2C800&ssl=1");
+			background-position: center;
+			font-family: sans-serif;
+			color:#703f37;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		ul {
+			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+  			overflow: hidden;
+  			background-color: #703f37;
+  			position: fixed;
+  			top: 0;
+  			width: 100%;
+		}
+		li {
+  			float: left;
+		}
+		li a {
+  			display: block;
+ 			  color: #c8b7a6;
+  			text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
+		}
+		li a:hover:not(.active) {
+  			background-color: #c8b7a6;
+			  color: #703f37;
+		}
+		h1{
+			font-weight: bold;
+			font-size: 60px;
+		}
+		label{
+			font-weight: bold;
+			font-size: 21px;
+		}
+		.require{
+			padding:20px;
+			margin-top:70px;
+			height:400px;
+			text-align: center;
+			float: left;
+			background-color: black;
+			color: #c8b7a6;
+			text-align: center;
+			float: left;
+			opacity: 0.75;
+		}
+		.box{
+			display: flex;
+		}
+		h3{
+			font-weight: bold;
+			font-size: 50px;
+		}
+		h5{
+			font-size: 20px;
+		}
+    </style>
+  </head>
+  <body>
+    <!---------------------------------------------------------------------NAVBAR------------------------------------------------------------->
+	  <ul>
+		  <li><a href="main.html">Home</a></li>
+		  <li><a href="index.html">Paraglider Info</a></li>
+	  </ul>
+    <div class="box">
+		<div class="mainWrapper" style="padding:20px;margin-top:20px;height:100px;text-align: center;float: left;">
+    
+			<h1>Paraglider Info</h1>
+	  
+			<form>
+			  <div class="form-group">
+				<label>Paraglider Name</label>
+				<input id="fileName" type="text" class="form-control">
+			  </div>
+	  
+			  <div class="form-group">
+				<label>Paraglider Details (Age,Weight,Height,Physical Disablities)</label>
+				<textarea id="fileContents" class="form-control" rows="5"></textarea>
+	  
+			  </div>
+			</form>
+			<button id="btnCreate" class="btn btn-default">Create</button>
+			<button id="btnRead" class="btn btn-default">Read</button>
+			<button id="btnUpdate" class="btn btn-default">Update</button>
+			<button id="btnDelete" class="btn btn-default">Delete</button>
+	  
+		  
+		  </div>
+		  <div class="box">
+			  <div class="require">
+				  <h3>Requirement</h3>
+				  <div class="queenstown">
+					  <h5>1. The weight MUST be between 30kg to 105kg</h5>
+				  </div>
+				  <br>
+				  <div class="pokhara">
+					  <h5>2. No height limit</h5>
+				  </div>
+				  <br>
+				  <div class="gudari">
+					  <h5>3. The paraglider must have no physical disablities that doesn't allow them to paraglide</h5>
+				  </div>
+				  <br>
+			  </div>
+		</div>
+	</div>
+
+    <script src="main.js">
+      
+      
+    </script>
+  </body>
+</html>
